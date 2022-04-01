@@ -1,0 +1,73 @@
+body{
+    
+}
+
+h1{
+    font-family: 'Righteous', cursive;
+    font-size: 44px;
+    font-weight: 400;
+    color: #FFFFFF
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF
+}
+
+h3{
+    font-family: 'Righteous', cursive;
+    font-size: 26px;
+    font-weight: 400;
+    color: #333333
+}
+
+
+.topo{
+    width: 414px;
+    height: 92px;
+    background-color: #CF2B2B; 
+    
+    
+}
+
+.meio{
+    width: 414px;
+    
+    background-color: #E5E5E5;
+}
+
+.comida{
+    width: 172px;
+    height: 216px;
+    border-radius: 9px;
+    margin-left: 19px;
+    background-color: #FFFFFF;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+    margin-top: 18px;
+    
+}
+
+.baixo{
+    width: 414px;
+    height: 92px;
+    background-color: yellow;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+}
