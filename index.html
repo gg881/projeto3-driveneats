@@ -1,16 +1,258 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="DrivenEats" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
+    <div class="conteudo">
+        <div class="topo"> 
+            <h1>DrivenEats</h1>
+            <h2>Sua comida em 6 minutos</h2>
+        </div>
+        <div class="meio">
+            <div class="tipocomida">
+            <h3>Primeiro, seu prato</h3>
+                <div class="variascomidas">
+                    <div class="comida" onclick="pedircomida(this)">
+                    <img src="/imagens/pexels-julie-aagaard-2097090.jpg">
+                    <h4 id="nome">Salada Yang Yang</h4>
+                    <div class="texto">
+                        <h5>Um pouco de batata, um pouco de salada</h5>
+                        
+                        <h6>R$ 14,90</h6>
+                    </div>
+                    </div>
+
+                    <div class="comida" onclick="pedircomida(this)">
+                        <img src="/imagens/pexels-kasumi-loffler-3535383.jpg">
+                        <h4>Carninha</h4>
+                        <div class="texto">
+                            <h5>Cane suculenta e fritas crocantes</h5>
+                            
+                            <h6>R$ 14,90</h6>
+                        </div>
+                        </div>
     
-    <h1>upload para Github</h1>
-    github inicial
+                    <div class="comida" onclick="pedircomida(this)">
+                        <img src="/imagens/pexels-pixabay-416471.jpg">
+                        <h4>Salada X</h4>
+                        <div class="texto">
+                            <h5>Um pouco de batata, um pouco de salada</h5>
+                            
+                            <h6>R$ 14,90</h6>
+                        </div>
+                    </div>
+
+                    <div class="comida" onclick="pedircomida(this)">
+                        <img src="/imagens/pexels-daria-shevtsova-1824353.jpg">
+                        <h4>Salada Vegg</h4>
+                        <div class="texto">
+                            <h5>Um pouco de batata, um pouco de salada</h5>
+                            
+                            <h6>R$ 14,90</h6>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+            <h3>Agora, sua bebida</h3>
+            <div class="variascomidas">
+                <div class="comida" onclick="pedirbebida(this)">
+                    <img src="/imagens/coca.jpg">
+                    <h4 id="nome">Coca</h4>
+                    <div class="texto">
+                        <h5>Bem gelada. Lata</h5>
+                        
+                        <h6>R$ 4,90</h6>
+                    </div>
+                    </div>
+
+                    <div class="comida" onclick="pedirbebida(this)">
+                        <img src="/imagens/fanta.jpg">
+                        <h4>Fanta</h4>
+                        <div class="texto">
+                            <h5>Bem gelada. Lata</h5>
+                            
+                            <h6>R$ 4,50</h6>
+                        </div>
+                        </div>
     
+                    <div class="comida" onclick="pedirbebida(this)">
+                        <img src="/imagens/sucolaranja.jpg">
+                        <h4>Suco de Laranja</h4>
+                        <div class="texto">
+                            <h5>Natural, sem açucar</h5>
+                            
+                            <h6>R$ 8,90</h6>
+                        </div>
+                    </div>
+
+                    <div class="comida" onclick="pedirbebida(this)">
+                        <img src="/imagens/sucouva.jpg">
+                        <h4>Suco de Uva</h4>
+                        <div class="texto">
+                            <h5>Integral. Carrafa 500ml</h5>
+                            
+                            <h6>R$ 9,90</h6>
+                        </div>
+                    </div>
+            </div>
+
+            <h3>Por fim, sua sobremesa</h3>
+            <div class="variascomidas">
+                <div class="comida" onclick="pedirsobremesa(this)">
+                    <img src="/imagens/pexels-julie-aagaard-2097090.jpg">
+                    <h4 id="nome">Mousse de Chocolate</h4>
+                    <div class="texto">
+                        <h5>pote</h5>
+                        
+                        <h6>R$ 8,20</h6>
+                    </div>
+                    </div>
+
+                    <div class="comida" onclick="pedirsobremesa(this)">
+                        <img src="/imagens/pexels-kasumi-loffler-3535383.jpg">
+                        <h4>Pudim</h4>
+                        <div class="texto">
+                            <h5>De Leite Condensado</h5>
+                            
+                            <h6>R$ 8,50</h6>
+                        </div>
+                        </div>
+    
+                    <div class="comida" onclick="pedirsobremesa(this)">
+                        <img src="/imagens/pexels-pixabay-416471.jpg">
+                        <h4>Bolo de Chocolate</h4>
+                        <div class="texto">
+                            <h5>Pedaço</h5>
+                            
+                            <h6>R$ 6,95</h6>
+                        </div>
+                    </div>
+
+                    <div class="comida" onclick="pedirsobremesa(this)">
+                        <img src="/imagens/pexels-daria-shevtsova-1824353.jpg">
+                        <h4>Bolo de Laranja</h4>
+                        <div class="texto">
+                            <h5>Pedaço</h5>
+                            
+                            <h6>R$ 6,96</h6>
+                        </div>
+                    </div>
+            </div>
+
+
+            
+        </div>
+
+        </div>
+        <div class="baixo">
+            <div class="botao" onclick="clicoubotao">Selecionar os 3 itens para fechar o pedido</div>
+        </div>
+
+    </div>
+    
+<script>
+    let comida = "";
+    let bebida = "";
+    let sobremesa = "";
+
+    function borda(elemento){
+        elemento.classList.toggle("bordaverde");
+    }
+
+    function removeroutros(){
+
+        
+        for (i=0; i<4; i++){
+        const tira = document.querySelector(".bordaverde");
+            if (tira !== null) {
+            tira.classList.toggle("bordaverde");
+            }
+
+        }
+       
+    }
+
+
+    function removeroutros2(){
+
+        
+for (i=0; i<4; i++){
+const tira = document.querySelector(".bordaverde2");
+    if (tira !== null) {
+    tira.classList.toggle("bordaverde2");
+    }
+
+}
+
+}
+
+
+function removeroutros3(){
+
+        
+for (i=0; i<4; i++){
+const tira = document.querySelector(".bordaverde3");
+    if (tira !== null) {
+    tira.classList.toggle("bordaverde3");
+    }
+
+}
+
+}
+
+    function pedircomida(elemento){      
+        removeroutros();
+        elemento.classList.toggle("bordaverde"); /*coloca borda*/            
+        comida = elemento.innerText;
+
+        if (comida!=="" && bebida!=="" && sobremesa!=="" ){
+            const elemento = document.querySelector(".botao");
+            elemento.innerHTML = "Finalizar Pedido";
+            elemento.classList.add("botaoverde");
+        }
+        
+        }
+
+        function pedirbebida(elemento){      
+        removeroutros2();
+        elemento.classList.toggle("bordaverde2"); /*coloca borda*/            
+        bebida = elemento.innerText;
+        if (comida!=="" && bebida!=="" && sobremesa!=="" ){
+            const elemento = document.querySelector(".botao");
+            elemento.innerHTML = "Finalizar Pedido";
+            elemento.classList.add("botaoverde");
+        }
+        
+        }
+
+        function pedirsobremesa(elemento){      
+        removeroutros3();
+        elemento.classList.toggle("bordaverde3"); /*coloca borda*/            
+        sobremesa = elemento.innerText;
+        if (comida!=="" && bebida!=="" && sobremesa!=="" ){
+            const elemento = document.querySelector(".botao");
+            elemento.innerHTML = "Finalizar Pedido";
+            elemento.classList.add("botaoverde");
+        }
+        
+        }
+
+
+
+
+
+</script>    
     
 </body>
 </html>
