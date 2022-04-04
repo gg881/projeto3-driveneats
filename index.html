@@ -27,7 +27,7 @@
                     <div class="texto">
                         <h5>Um pouco de batata, um pouco de salada</h5>
                         
-                        <h6>R$ 14,90</h6>
+                        <h6>R$ 24,90</h6>
                     </div>
                     </div>
 
@@ -37,7 +37,7 @@
                         <div class="texto">
                             <h5>Cane suculenta e fritas crocantes</h5>
                             
-                            <h6>R$ 14,90</h6>
+                            <h6>R$ 35,90</h6>
                         </div>
                         </div>
     
@@ -47,7 +47,7 @@
                         <div class="texto">
                             <h5>Um pouco de batata, um pouco de salada</h5>
                             
-                            <h6>R$ 14,90</h6>
+                            <h6>R$ 28,30</h6>
                         </div>
                     </div>
 
@@ -57,7 +57,7 @@
                         <div class="texto">
                             <h5>Um pouco de batata, um pouco de salada</h5>
                             
-                            <h6>R$ 14,90</h6>
+                            <h6>R$ 18,72</h6>
                         </div>
                     </div>
 
@@ -115,7 +115,7 @@
                     <div class="texto">
                         <h5>pote</h5>
                         
-                        <h6>R$ 8,20</h6>
+                        <h6>R$ 8,00</h6>
                     </div>
                     </div>
 
@@ -156,7 +156,7 @@
 
         </div>
         <div class="baixo">
-            <div class="botao" onclick="clicoubotao">Selecionar os 3 itens para fechar o pedido</div>
+            <div class="botao" onclick="clicoubotao()">Selecionar os 3 itens para fechar o pedido</div>
         </div>
 
     </div>
@@ -248,7 +248,48 @@ const tira = document.querySelector(".bordaverde3");
         
         }
 
+        function clicoubotao(){
+            let separado = [];
+            let separado1 = [];
+            let separado2 = [];
+            let separacifrao = [];
+            let precos = [];
 
+            if (comida!=="" && bebida!=="" && sobremesa!=="" ){
+            
+            
+                
+               separado = comida.split ("\n");
+               separado1 = bebida.split ("\n");
+               separado2 = sobremesa.split ("\n");
+               preco = 0.0; 
+
+               /*calcula os precos*/
+                separacifrao = comida.split ("$ ");
+                separacifrao = separacifrao[1].split(",");
+                separacifrao[1]=separacifrao[0]+"."+separacifrao[1];
+                preco = preco + parseFloat(separacifrao[1]);
+                
+                separacifrao = bebida.split ("$ ");
+                separacifrao = separacifrao[1].split(",");
+                separacifrao[1]=separacifrao[0]+"."+separacifrao[1];
+                preco = preco + parseFloat(separacifrao[1]);
+
+                separacifrao = sobremesa.split ("$ ");
+                separacifrao = separacifrao[1].split(",");
+                separacifrao[1]=separacifrao[0]+"."+separacifrao[1];
+                preco = preco + parseFloat(separacifrao[1]);
+
+               
+
+               texto = "Olá, gostaria de fazer o pedido:\n- Prato: " + separado[0] + "\n- Bebida: " + separado1[0] + "\n- Sobremesa: " + separado2[0] + "\nTotal: R$ " + preco;
+                console.log(texto);
+                window.open(" https://wa.me/11975584836?text=" + texto);
+
+
+               
+            }
+        }
 
 
 
